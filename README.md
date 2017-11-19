@@ -14,6 +14,8 @@ import MyComponent from './components/MyComponent'
 
 Probably could not reasonable handle cases where file name isn't valid identifier.
 
+This probably wouldn't work when combined with named imports.
+
 ---
 
 Additionally, an even more flexible syntax could allow for placeholders in the path based on the default identifier.
@@ -45,5 +47,3 @@ Equivalent to:
 import MyComponent from './components/MyComponent/main'
 import myJSON from './data/myJSON.json'
 ```
-
-This probably wouldn't work when combined with named imports.
