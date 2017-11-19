@@ -23,6 +23,7 @@ Additionally, an even more flexible syntax could allow for placeholders in the p
 Either using regular string with `${id}` placeholders that look like template literal expressions:
 
 ```js
+import MyComponent from './components/${id}'
 import MyComponent from './components/${id}/main'
 import myJSON from './data/${id}.json'
 ```
@@ -30,6 +31,7 @@ import myJSON from './data/${id}.json'
 or a more terse placeholder, just `$id`:
 
 ```js
+import MyComponent from './components/$id'
 import MyComponent from './components/$id/main'
 import myJSON from './data/$id.json'
 ```
@@ -37,6 +39,7 @@ import myJSON from './data/$id.json'
 or actual template literal strings, where `id` is the default identifier used in the import:
 
 ```js
+import MyComponent from `./components/${id}`
 import MyComponent from `./components/${id}/main`
 import myJSON from `./data/${id}.json`
 ```
@@ -44,6 +47,7 @@ import myJSON from `./data/${id}.json`
 Equivalent to:
 
 ```js
+import MyComponent from './components/MyComponent'
 import MyComponent from './components/MyComponent/main'
 import myJSON from './data/myJSON.json'
 ```
