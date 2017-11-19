@@ -3,13 +3,13 @@
 More terse imports using names of file imported as identifier.
 
 ```js
-import as './components/MyComponent'
+import from './components/MyComponent'
 ```
 
-or:
+or using `...`:
 
 ```js
-import from './components/MyComponent'
+import MyComponent from './components/...'
 ```
 
 Equivalent to:
