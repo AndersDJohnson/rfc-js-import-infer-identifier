@@ -6,6 +6,12 @@ More terse imports using names of file imported as identifier.
 import as './components/MyComponent'
 ```
 
+or:
+
+```js
+import from './components/MyComponent'
+```
+
 Equivalent to:
 
 ```js
