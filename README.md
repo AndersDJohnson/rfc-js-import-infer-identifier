@@ -37,3 +37,5 @@ Equivalent to:
 ```js
 import MyComponent from './components/MyComponent/main'
 ```
+
+This probably wouldn't work when combined with named imports.
