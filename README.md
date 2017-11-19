@@ -14,6 +14,8 @@ import MyComponent from './components/MyComponent'
 
 Probably could not reasonable handle cases where file name isn't valid identifier.
 
+---
+
 Additionally, an even more flexible syntax could allow for placeholders in the path based on the default identifier.
 
 Either using regular string with `${id}` placeholders that look like template literal expressions:
