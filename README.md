@@ -1,6 +1,7 @@
 # rfs-js-import-infer-token
 
-More terse imports using names of file imported as identifier.
+More terse default imports using names of file imported as identifier. 
+This probably wouldn't work when combined with named imports.
 
 ```js
 import from './components/MyComponent'
@@ -20,7 +21,21 @@ import MyComponent from './components/MyComponent'
 
 Probably could not reasonable handle cases where file name isn't valid identifier.
 
-This probably wouldn't work when combined with named imports.
+Unless we automatically camel-case, which would also be useful for imports from `npm`, e.g.:
+
+```js
+import from 'left-pad`
+
+leftPad('foo', 5)
+```
+
+Equivalent to:
+
+```js
+import leftPad from 'left-pad`
+
+leftPad('foo', 5)
+```
 
 ---
 
